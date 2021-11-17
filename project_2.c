@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "functions.c"
+#include "functions_project.c"
 void main(){
   createHead();
   addMenu();
