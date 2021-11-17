@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int main(void)
+int read_number()
 {
-  int numbers[500];
+  int numbers[10];
   int i = 0;
   FILE *file;
 
@@ -14,11 +16,11 @@ int main(void)
     }
     fclose(file);
 
-    numbers[i] = '\0';
+    numbers[i] = '\n';
 
-    for (i = 0; numbers[i] != '\0'; i++)
+    for (i = 0; numbers[i] != '\n'; i++)
       printf("%d\n", numbers[i]);
   }
-  printf("%.2f",value);
+
   return 0;
 }

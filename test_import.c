@@ -1,5 +1,8 @@
 #include<stdio.h>
-#include <stdlib.h>   // for exit() function
+printf("Data from the file:\n%s", c);
+fclose(fptr);
+
+return 0;
 
 int main()
 {
