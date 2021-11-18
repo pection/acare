@@ -30,7 +30,7 @@ int main()
     if (string)
     {
         printf("%s",string);
-        free(string);
+          free(string);
     }
 
     return 0;

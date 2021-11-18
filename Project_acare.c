@@ -14,7 +14,7 @@ int readmenu(){
   char name_food[1000];
   int value_menu;
   int i=0;
-  FILE *fp = fopen("listmenu0.txt", "r");
+  FILE *fp = fopen("listmenu.txt", "r");
   if(fp == NULL)
     {
         printf("File does not exist\n");
@@ -22,10 +22,9 @@ int readmenu(){
     }
     while( fscanf(fp, "%s %d", name_food,&value_menu) != EOF )
     {
-    		sum_menu++;
-        strcpy(Menu[i].foodname,name_food);
+				i++;
+		    strcpy(Menu[i].foodname,name_food);
 				Menu[i].price=value_menu;
-      	i++;
 				sum_menu++;
 
     }
@@ -34,7 +33,7 @@ int readmenu(){
 void main(){
 
   sum_menu=readmenu();
-  printf("%d %s %.2f ฿\n\n",1,Menu[0].foodname,Menu[0].price);
-  printf("%d %s %.2f ฿\n\n",2,Menu[1].foodname,Menu[1].price);
-
+  for(int i=1;i<=sum_menu;i++){
+  printf("%d %s %.1f\n\n",i,Menu[i].foodname,Menu[i].price);
+}
 }

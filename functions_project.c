@@ -1,7 +1,6 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 int max_rows = 100;
 void Create_Head()
 {
@@ -23,7 +22,7 @@ void Add_Menu()
     {
       printf("%s", Menu);
     }
-    printf("_");
+    printf("=");
   }
   printf("|\n");
 }
@@ -41,26 +40,4 @@ void Create_Welcome()
     printf("_");
   }
   printf("|\n");
-}
-
-int *read_number()
-{
-  int numbers[10];
-  int i = 0;
-  FILE *file;
-
-  if (file = fopen("menu_value.txt", "r"))
-  {
-    while (fscanf(file, "%d", &numbers[i]) != EOF)
-    {
-      i++;
-    }
-    fclose(file);
-
-    numbers[i] = '\n';
-
-    for (int i = 0; numbers[i] != '\n'; i++)
-      printf("%d\n", numbers[i]);
-  }
-  return 0;
 }

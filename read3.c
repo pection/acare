@@ -13,12 +13,10 @@ int main(void)
     char buffer[bufferLength];
     char MENU[1000];
     filePointer = fopen("listmenu.txt", "r");
-    count = 0;
     while(fgets(buffer, bufferLength, filePointer)) {
-        MENU[100]+=buffer;
         printf("%s\n", buffer);
     }
-    printf("%s",MENU);
+    // printf("%s",MENU);
 
     fclose(filePointer);
     if (line)
