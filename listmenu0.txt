@@ -1,4 +1,12 @@
-Deep-force
-100
-Deep-force2
-1002
+Deep-Fried-Wontons 100
+Deep-Fried-Spring-Roll 100
+Hot-and-Sour-Soup-Szechaun-Style 200
+Grilled-chicken 300
+Steamed-duck 99
+Wonton-soup 75
+Dried-shrimps 150
+Chicken-stir-fried-with-ginger 100
+Crisp-fried-mussel-pancakes 125
+Fried-fish-toppted-with-chilli-sauce 100
+Salted-cat-fish-with-chili-paste 150
+Rice 20
